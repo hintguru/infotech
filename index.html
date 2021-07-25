@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Tech</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/img/logo111.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-sm-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light fw-bold" id="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link text-light fw-bold" id="nav-link"  href="course.html">
+                        Web Development
+                      </a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link text-light fw-bold" id="nav-link" href="course.html" >
+                        Anriod Development
+                      </a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link  text-light fw-bold" id="nav-link"  href="course.html" >
+                        Python
+                      </a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link  text-light fw-bold" id="nav-link"  href="course.html" >
+                        Others
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-light fw-bold" id="nav-link" href="about.html">About Us</a>
+                    </li>
+                </div>
+                <div class="btns0">
+                <button type="button" id="btns1" class="btn btns1 shadow-none px-4 mx-2"  data-bs-toggle="modal" data-bs-target="#loginModal">Log In</button>
+                <button type="button" id="btns2" class="btn shadow-none"  data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+              </div>
+              </div>
+              </nav>
+
+ <!-- Modal  -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+        <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control shadow-none" id="inputEmail3">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control shadow-none" id="inputPassword3">
+            </div>
+          </div>
+          <fieldset class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input shadow-none" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  Male
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input shadow-none" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Female
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <div class="row mb-3">
+            <div class="col-sm-10 offset-sm-2">
+              <div class="form-check">
+                <input class="form-check-input shadow-none" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Remember me
+                </label>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary shadow-none">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Log In</h5>
+        <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control shadow-none" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input shadow-none" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Plus Member</label>
+          </div>
+          <button type="submit" class="btn btn-primary shadow-none">Submit</button>
+        </form>  
+      </div>
+    </div>
+  </div>
+</div>
+            <div class="cut">
+                <div class="col-lg-6 w-100" style="margin-top: 10%;" id="cut1">
+                    <p class="display-6 fw-bold text-white lh-1" id="animated text">Welcome To Info Tech</p>
+                    <h5 style="color:whitesmoke;">Coding is future</h5>
+                    <div class=" cuts d-flex" style="width: 40%; flex-direction: row;">
+                      <button type="button" id="btn1" class="btn w-75 text-light shadow-none btn-lg px-4 mx-2 my-4">
+                        <a href="course.html"  style="text-decoration: none; color: white;">Explore</a></button>
+                      <button type="button" id="btn2" class="btn w-75  shadow-none text-light px-4 my-4"> 
+                        <a href="getplus.html"  style="text-decoration: none; color: white;">Get Plus</a></button>
+                    </div>
+                    <div class="icons w-100 d-flex" style=" display:flex; align-items: center; justify-content: center; flex-direction: row;">
+                      <a href="#" style="text-decoration: none;">
+                        <i class="fab fa-facebook-f" style="color: white; border-radius: 50%; background-color:cyan; height: 2.5rem; width: 2.5rem; display: grid; place-items:center;"></i></a>
+                        <a href="#" style="text-decoration: none;">
+                        <i class="fab fa-instagram" style="color:white;  border-radius: 50%; background-color:violet; height: 2.5rem; width: 2.5rem; display: grid; place-items:center;"></i></a>
+                        <a href="#" style="text-decoration: none;">
+                        <i class="fab fa-twitter" style="color:white;  border-radius: 50%; background-color:aquamarine; height: 2.5rem; width: 2.5rem; display: grid; place-items:center; "></i></a>
+                        <a href="#" style="text-decoration: none;">
+                        <i class="fab fa-youtube"  style="color:white; border-radius: 50%; background-color:red; height: 2.5rem; width: 2.5rem; display: grid; place-items:center;"></i></a>
+                        <a href="#" style="text-decoration: none;">
+                        <i class="fab fa-whatsapp"  style="color:white; border-radius: 50%; background-color:green; height: 2.5rem; width: 2.5rem; display: grid; place-items:center;"></i></a>
+                  </div>
+                  </div>
+  </div>
+  <h3 class="text-center my-4">Popular Courses</h3>
+  <hr class="w-100 mx-auto">
+  <div class="d-flex border-white flex-row card" id="car">
+    <div class="card web" id="card1" style=" width:256px; height:320px;">
+        <img src="img/img/img.2.jfif" class="card-img-top mx-auto my-4" alt="...">
+        <div class="card-body card__course">
+          <h5 class="card-title">Web Development</h5>
+          <a href="#" class="btn text-light bg-warning shadow-none">More</a>
+        </div>
+      </div>
+            <div class="card" id="card1" style=" width:256px; height: 320px; margin: 40px;">
+                <img src="img/img/img.3.jpg" style="height:70%; width: 95%;" class="card-img-top mx-auto my-4" alt="...">
+                <div class="card-body card__course">
+                  <h5 class="card-title">Anriod Development</h5>
+                  <a href="#" class="btn text-light bg-warning shadow-none">More</a>
+                </div>
+              </div>
+              <div class="card" id="card1" style=" width:256px; height:320px;">
+                <img src="img/img/img.5.png"  style="height:60%; width: 70%;" class="card-img-top mx-auto my-4" alt="...">
+                <div class="card-body card__course">
+                  <h5 class="card-title">Python</h5>
+                  <a href="#" class="btn text-light bg-warning shadow-none">More</a>
+                </div>
+              </div>
+</div>
+<div class="revivew my-4 mx-4">
+  <h3 class="text-center my-4">Revivews</h3>
+<hr class="w-75 mx-auto">
+<div class="row row-cols-1 row-cols-md-3 mb-3 mx-4 my-4 text-center revw">
+  <div class="col">
+    <div class="card mb-4 rounded-3 shadow-sm revw1">
+      <div class="card-body">
+          <i class="fas fa-user-circle f" style="font-size: 50px;"></i>
+          <h5>Aniket Gaikwad</h5>
+        <p class="mt-3 mx-4 mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <div class="star1">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card mb-4 rounded-3 shadow-sm revw2">
+      <div class="card-body">
+          <i class="fas fa-user-circle f" style="font-size: 50px;"></i>
+          <h5>Tej Ghuge</h5>
+          <p class="mt-3 mx-4 mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          </p>
+        <div class="star1">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+                        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card mb-3 rounded-3 shadow-sm revw3">
+      <div class="card-body">
+          <i class="fas fa-user-circle f" style="font-size: 50px;"></i>
+          <h5>Shravan Surdkar</h5>
+          <p class="mt-3 mx-4 mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          </p>
+        <div class="star1">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+                        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="cards">
+  <h3 class="text-center my-4">Contact Us</h3>
+<hr class="w-75 mx-auto">
+<div class="contact mx-auto my-4 rounded px-4 py-3 w-75 ">
+  <div class="row g-3">
+    <div class="col shadow-none">
+      <input type="text" class="form-control shadow-none" placeholder="First name" aria-label="First name">
+    </div>
+    <div class="col shadow-none">
+      <input type="text" class="form-control shadow-none" placeholder="Last name" aria-label="Last name">
+    </div>
+    <form class="row g-3">
+      <div class="col-md-6 shadow-none">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control shadow-none" id="inputEmail4">
+      </div>
+      <div class="col-md-6 shadow-none">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input type="password" class="form-control shadow-none" id="inputPassword4">
+      </div>
+      <div class="col-12 shadow-none">
+        <label for="inputAddress" class="form-label">Address</label>
+        <input type="text" class="form-control shadow-none" id="inputAddress" placeholder="1234 Main Stand">
+      </div>
+      <div class="col-12 shadow-none">
+        <label for="inputAddress2" class="form-label">Message</label>
+        <input type="text" class="form-control shadow-none" id="inputAddress2" placeholder="hello">
+      </div>
+      <div class="col-md-6 shadow-none">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control shadow-none" id="inputCity">
+      </div>
+      <div class="col-md-4 shadow-none">
+        <label for="inputState" class="form-label">State</label>
+        <select id="inputState" class="form-select shadow-none">
+          <option selected>---Select your state---</option>
+          <option>Maharashtra</option>
+          <option>Karnatak</option>
+          <option>Rajsthan</option>
+          <option>Goa</option>
+          <option>Delhi</option>
+          <option>Gujarat</option>
+        </select>
+      </div>
+      <div class="col-md-2 shadow-none">
+        <label for="inputZip" class="form-label">Pincode</label>
+        <input type="text" class="form-control shadow-none" id="inputZip">
+      </div>
+      <div class="col-12 ">
+        <div class="form-check">
+          <input class="form-check-input shadow-none" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+         Plus member
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary shadow-none">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+<footer class="text-muted py-3 mb-0" style="background-color: #374151;">
+  <div class="d-flex" style="flex-direction: row;">
+  <!-- About Us -->
+  <div class="container w-25  mx-4 my-1">
+    <p class=" text-center fw-bold" style="color: #B0BEC5;">About</p>
+    <hr class="w-75 mx-auto">
+  <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quod alias recusandae enim itaque aut.</p>
+    </div>
+
+    <!-- Useful Links -->
+  <div class="container w-25  mx-4 my-1" id="use-link">
+    <p class=" text-center fw-bold" style="color: #B0BEC5;">Useful Links</p>
+    <hr class="w-75 mx-auto">
+    <p class="mb-1 d-flex mx-auto" style="flex-direction: column; align-items: center; justify-content: center;"><a href="#" target="_blank" style="text-decoration: none; color: white;">About Us</a>
+      <a href="#" target="_blank" style="text-decoration: none; color:white;">Blog</a>
+      <a href="#" target="_blank" style="text-decoration: none; color: white;">Terms</a>
+      <a href="#" target="_blank" style="text-decoration: none; color: white;">Privacy</a>
+    </p>
+  </div>
+  
+<!-- Courses -->
+<div class="container w-25  mx-4 my-1" id="adv-course">
+  <p class=" text-center fw-bold" style="color: #B0BEC5;">Advanced Courses</p>
+  <hr class="w-75 mx-auto">
+  <p class="mb-1 d-flex" style="flex-direction: column; align-items: center;"><a href="#" target="_blank" style="text-decoration: none; color: white;">Web Design</a>
+    <a href="#" target="_blank" style="text-decoration: none; color: white;">Graphics</a>
+    <a href="#" target="_blank" style="text-decoration: none; color: white;">React Js</a>
+    <a href="#" target="_blank" style="text-decoration: none; color: white;">Sass</a>
+  </p>
+</div>
+
+
+<!-- Follow us -->
+<div class="container w-25  mx-4 my-1" id="social">
+  <p class=" text-center fw-bold" style="color: #B0BEC5;">Social Links</p>
+  <hr class="w-75 mx-auto">
+  <div class="icons1 w-25 text-center mx-auto my-3">
+    <a href="#">
+      <i class="fab fa-facebook-f" style="color: white;"></i></a><br>
+      <a href="#">
+      <i class="fab fa-twitter" style="color: white;"></i></a><br>
+      <a href="#">
+      <i class="fab fa-instagram" style="color:white;"></i></a><br>
+      <a href="#">
+      <i class="fab fa-youtube"  style="color:white;"></i></a><br>
+      <a href="#">
+      <i class="fab fa-whatsapp"  style="color:white;"></i></a>
+</div>
+</div>
+</div>
+<hr class="w-75 mx-auto">
+<p class="mb-1 text-center mt-4">© 2020-2021 Info Tech,Inc </p>
+  </footer>        
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>                          
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> -->
+                            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+  </html>
