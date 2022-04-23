@@ -1,7 +1,7 @@
 
-# Amazon Clone
+# Infotech
 
-I am clone Amazon using react for learn it well and explore something new. 
+I am made website using bootstrap for learn it well and explore something new. 
 
 
 ## Authors
